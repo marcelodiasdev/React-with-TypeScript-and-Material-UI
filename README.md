@@ -1,20 +1,36 @@
-# React com Typescript: Desenvolva um sistema de cadastro e autenticação
+# React + TypeScript: Registration & Authentication System
 
-## Funcionalidades do projeto
+A registration and authentication system built with React and TypeScript, using Material UI for a modern, responsive interface. Includes token-based auth, private routes and reactive state management.
 
-O projeto contará com o desenvolvimento de:
+## Features
 
-- Página inicial;
-- Formulário de login: envio de requisição POST, resgate do token de autenticação;
-- Formulário de cadastro: envio de requisição POST;
-- Modal de cadastro de especialista: envio de requisição POST em conjunto do token no cabeçalho;
+- Home page
+- Login form: sends a POST request and stores the authentication token
+- Registration form: sends a POST request
+- Specialist registration modal: sends a POST request with the token in the header
+- Private dashboard route, protected by authentication
 
-## Técnicas e tecnologias utilizadas
+## Tech & Techniques
 
-As técnicas e tecnologias que serão utilizadas neste projeto são:
+- **React** — library for building user interfaces
+- **TypeScript** — static typing on top of JavaScript
+- **Material UI (MUI)** — React component library for modern, responsive UIs
+- **React Router DOM** — routing, used to build the private dashboard route
+- **MobX** — state management with observables, reactions and actions for reactive data
 
-- React: Biblioteca para construção de interfaces de usuário.
-- Typescript: Linguagem de programação que adiciona tipagem estática ao Javascript.
-- MUI: Biblioteca de componentes React para criação de interfaces de usuário modernas e responsivas.
-- React-router-dom: Um conjunto de componentes que facilita a navegação e o roteamento, com ele será construído a rota privada da dashboard;
-- MobX: Biblioteca de gerenciamento de estado para aplicativos React que permite a criação de observáveis, reações e ações para uma fácil e eficiente manipulação de dados reativos.
+## Getting started
+
+    # clone the repository
+    git clone https://github.com/marcelodiasdev/React-with-TypeScript-and-Material-UI.git
+
+    # web client
+    cd web
+    npm install
+    npm run dev
+
+    # server (in a separate terminal)
+    cd server
+    npm install
+    npm run dev
+
+> Adjust the run scripts (`dev` / `start`) to match the ones in each package.json.
